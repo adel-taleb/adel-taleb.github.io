@@ -170,7 +170,7 @@ nav ul li a img.flag-icon:hover {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border: 3px solid #FF0000; /* Garde ou modifie la couleur de la bordure */
+    border: 3px solid #FFFFFF; /* Garde ou modifie la couleur de la bordure */
 }
 
 .about-content p, .about-content ul {

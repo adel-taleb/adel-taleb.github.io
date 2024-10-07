@@ -5,61 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adel Taleb - Data Scientist</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Adel Taleb, PhD</h1>
-        <p>Data Scientist et Référent Technique chez SogetiLabs</p>
+        <div class="container">
+            <h1 class="title">Adel Taleb, PhD</h1>
+            <p class="subtitle">Data Scientist et Référent Technique chez SogetiLabs</p>
+            <a href="#about" class="btn">En savoir plus</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>À propos de moi</h2>
-        <p>Je suis Data Scientist et doctorant à PSL, avec une expertise en vision par ordinateur, deep learning et analyse de données. Je travaille actuellement au SogetiLabs Paris où je dirige des projets en data science.</p>
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <p>Je suis Data Scientist et doctorant à PSL, spécialisé en vision par ordinateur, deep learning, et analyse de données. Je dirige des projets data science au SogetiLabs Paris.</p>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Compétences</h2>
-        <h3>Techniques</h3>
-        <ul>
-            <li>Python, R, TensorFlow, Pytorch, Scikit-Learn, SQL, NoSQL, Java, C/C++</li>
-        </ul>
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Capacité de vulgariser les termes techniques</li>
-            <li>Capacité à proposer des solutions</li>
-            <li>Bonne capacité d'analyse</li>
-            <li>Travail en équipe</li>
-            <li>Rigoureux et ponctuel</li>
-        </ul>
+    <section id="skills" class="fade-in">
+        <div class="container">
+            <h2>Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <h3>Techniques</h3>
+                    <ul>
+                        <li>Python, R, TensorFlow, Pytorch, Scikit-Learn, SQL, NoSQL, Java, C/C++</li>
+                    </ul>
+                </div>
+                <div class="skill-box">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Vulgarisation des concepts techniques</li>
+                        <li>Proposition de solutions</li>
+                        <li>Travail en équipe, rigueur, ponctualité</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Expériences professionnelles</h2>
-        <h3>SogetiLabs (Capgemini) - Data Scientist et Responsable du pôle data</h3>
-        <p>Depuis 2020 - Gestion et participation aux projets DATA, mise en place d'algorithmes de Deep Learning, encadrement de stagiaires.</p>
-
-        <h3>Laboratoire CHART (PSL) - PhD Student</h3>
-        <p>Depuis 2019 - Recherche sur l'analyse de la motricité des nouveau-nés avec des méthodes de vision par ordinateur.</p>
+    <section id="experience" class="fade-in">
+        <div class="container">
+            <h2>Expériences professionnelles</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>SogetiLabs (Capgemini) - Data Scientist</h3>
+                    <p>Gestion de projets DATA, algorithmes de Deep Learning, encadrement de stagiaires.</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>PSL - PhD Student</h3>
+                    <p>Recherche sur l'analyse de la motricité des nouveau-nés à l'aide de la vision par ordinateur.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="publications">
-        <h2>Publications scientifiques</h2>
-        <ul>
-            <li>Taleb, A. et al. (2024). <em>Spinal Muscular Atrophy Hypotonia Detection Using Computer Vision</em>. JAMA Pediatrics.</li>
-            <li>Taleb, A. et al. (2023). <em>Improve pose estimation model performance with unlabeled data</em>. IEEE CSCE.</li>
-            <li>Rambaud, P. et al. (2023). <em>Binary classification vs anomaly detection on imbalanced tabular medical datasets</em>. IEEE CSCE.</li>
-        </ul>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : <a href="mailto:ad.taleb12@gmail.com">ad.taleb12@gmail.com</a></p>
-        <p>Téléphone : 06 51 69 81 42</p>
-        <p>LinkedIn : <a href="https://www.linkedin.com/in/adel-ali-taleb">linkedin.com/in/adel-ali-taleb</a></p>
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email : <a href="mailto:ad.taleb12@gmail.com">ad.taleb12@gmail.com</a></p>
+            <p>Téléphone : 06 51 69 81 42</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/adel-ali-taleb">linkedin.com/in/adel-ali-taleb</a></p>
+        </div>
     </section>
 
     <footer>
-        <p>© 2024 Adel Taleb. Tous droits réservés.</p>
+        <div class="container">
+            <p>© 2024 Adel Taleb. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 </html>

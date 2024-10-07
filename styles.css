@@ -150,4 +150,10 @@ nav ul li a img.flag-icon {
 nav ul li a img.flag-icon:hover {
     border-color: #4CAF50; /* Ajouter une bordure colorée au survol */
 }
+.flag-icon {
+    width: 30px; /* Ajuste la taille du drapeau */
+    height: auto;
+    vertical-align: middle; /* Pour bien aligner l'icône avec le texte */
+    margin-right: 5px;
+}
 

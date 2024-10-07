@@ -34,19 +34,18 @@ header .subtitle {
 }
 
 .btn {
-    background-color: #FF0000; /* Couleur rouge */
+    background-color: #FF0000;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px; /* Arrondir tous les coins */
-    animation: bounce-in 2.5s ease-in-out;
+    border-radius: 50px; /* Force un arrondi complet en haut et en bas */
+    display: inline-block;
     transition: background-color 0.3s ease;
-    display: inline-block; /* S'assurer que le bouton est un élément de bloc */
-    overflow: hidden; /* Pour éviter tout débordement de style */
+    overflow: hidden; /* S'assure qu'aucun contenu ne déborde */
 }
 
 .btn:hover {
-    background-color: #cc0000; /* Couleur plus foncée au survol */
+    background-color: #cc0000;
 }
 
 .container {

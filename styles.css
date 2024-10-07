@@ -160,3 +160,19 @@ nav ul li a img.flag-icon:hover {
     vertical-align: middle;
     margin-right: 5px;
 }
+.about-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-content img {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #FF0000; /* Garde ou modifie la couleur de la bordure */
+}
+
+.about-content p, .about-content ul {
+    flex: 1; /* Permet au texte de prendre tout l'espace restant à droite de l'image */
+}

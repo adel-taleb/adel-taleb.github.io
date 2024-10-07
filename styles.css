@@ -127,7 +127,7 @@ footer {
     object-fit: cover;
     float: left;
     margin-right: 20px;
-    border: 3px solid #FFFFFF; /* Tu peux garder ou changer la couleur de la bordure */
+    /*border: 3px solid #FFFFFF;  Tu peux garder ou changer la couleur de la bordure */
     /* Supprimer le border-radius pour retirer l'effet de cercle */
 }
 

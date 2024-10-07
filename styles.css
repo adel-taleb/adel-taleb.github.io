@@ -41,6 +41,8 @@ header .subtitle {
     border-radius: 5px; /* Arrondir tous les coins */
     animation: bounce-in 2.5s ease-in-out;
     transition: background-color 0.3s ease;
+    display: inline-block; /* S'assurer que le bouton est un élément de bloc */
+    overflow: hidden; /* Pour éviter tout débordement de style */
 }
 
 .btn:hover {

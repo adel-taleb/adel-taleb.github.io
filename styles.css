@@ -1,66 +1,121 @@
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
-    padding: 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+header .title {
+    font-size: 3em;
+    animation: slide-in 1.5s ease-in-out;
 }
 
-header p {
-    margin: 5px 0;
+header .subtitle {
+    margin: 20px 0;
     font-size: 1.2em;
+    animation: fade-in 2s ease-in-out;
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: bounce-in 2.5s ease-in-out;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 section {
+    padding: 60px 0;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-box {
+    background: #eee;
     padding: 20px;
-    margin: 20px;
-    background-color: white;
     border-radius: 8px;
+    width: 48%;
 }
 
-h2 {
-    color: #4CAF50;
+.timeline {
+    margin-top: 20px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background-color: #e0e0e0;
-    margin: 5px 0;
-    padding: 10px;
+.timeline-item {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-left: 4px solid #4CAF50;
     border-radius: 5px;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-align: center;
+    padding: 20px 0;
 }
 
-a {
-    color: #4CAF50;
-    text-decoration: none;
+@keyframes slide-in {
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
-a:hover {
-    text-decoration: underline;
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-in {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

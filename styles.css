@@ -355,3 +355,17 @@ nav ul li a img.flag-icon:hover {
         margin-bottom: 20px;
     }
 }
+.btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000;
+}

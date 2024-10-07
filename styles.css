@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('header-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,6 +24,7 @@ header {
 header .title {
     font-size: 3em;
     animation: slide-in 1.5s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre pour rendre le texte lisible */
 }
 
 header .subtitle {
@@ -119,6 +120,7 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
 .photo-identite {
     border-radius: 50%;
     width: 150px;
@@ -128,6 +130,7 @@ footer {
     margin-right: 20px;
     border: 3px solid #4CAF50;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -140,39 +143,20 @@ nav ul li {
 }
 
 nav ul li a img.flag-icon {
-    width: 30px; /* Taille du drapeau */
+    width: 30px;
     height: auto;
-    vertical-align: middle; /* Aligner les images verticalement */
+    vertical-align: middle;
     border: 2px solid transparent;
     border-radius: 5px;
 }
 
 nav ul li a img.flag-icon:hover {
-    border-color: #4CAF50; /* Ajouter une bordure colorée au survol */
+    border-color: #4CAF50;
 }
+
 .flag-icon {
-    width: 30px; /* Ajuste la taille du drapeau */
+    width: 30px;
     height: auto;
-    vertical-align: middle; /* Pour bien aligner l'icône avec le texte */
+    vertical-align: middle;
     margin-right: 5px;
 }
-header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-header .title {
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ajoute une ombre pour rendre le texte plus lisible */
-}
-
-header .subtitle {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-

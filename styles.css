@@ -34,12 +34,17 @@ header .subtitle {
 }
 
 .btn {
-    background-color: #FF0000; /* Changement de couleur verte à rouge */
+    background-color: #FF0000; /* Couleur rouge */
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Arrondir tous les coins */
     animation: bounce-in 2.5s ease-in-out;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cc0000; /* Couleur plus foncée au survol */
 }
 
 .container {

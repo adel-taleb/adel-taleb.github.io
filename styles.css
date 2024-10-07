@@ -122,13 +122,13 @@ footer {
 }
 
 .photo-identite {
-    border-radius: 50%;
     width: 150px;
     height: 150px;
     object-fit: cover;
     float: left;
     margin-right: 20px;
-    border: 3px solid #FF0000; /* Bordure autour de la photo en rouge */
+    border: 3px solid #FF0000; /* Tu peux garder ou changer la couleur de la bordure */
+    /* Supprimer le border-radius pour retirer l'effet de cercle */
 }
 
 nav ul {
